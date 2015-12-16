@@ -1,0 +1,45 @@
+<div class="container">
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+
+    <!-- INDICATORS-->
+    <ol class="carousel-indicators">
+      <li class="active" data-slide-to="0" data-target="#carousel"></li>
+      <li data-slide-to="1" data-target="#carousel"></li>
+      <li data-slide-to="2" data-target="#carousel"></li>
+      <li data-slide-to="3" data-target="#carousel"></li>
+      <li data-slide-to="4" data-target="#carousel"></li>
+    </ol>
+    <!-- WRAPPER FOR  SLIDES-->
+
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag("city.jpeg")%>
+        <div class="carousel-caption">
+          <h2>Heading goes here</h2>
+          add caption text here
+        </div>
+      </div>
+      <div class="item ">
+        <%= image_tag("city5.jpg")%>
+      </div>
+      <div class="item ">
+        <%= image_tag("city2.jpg")%>
+      </div>
+      <div class="item ">
+        <%= image_tag("city3.jpg")%>
+      </div>
+      <div class="item ">
+        <%= image_tag("city4.jpg")%>
+      </div>
+    </div>
+
+    <!--CONTROL-->
+
+    <a href="#carousel" class="carousel-control left" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a href="#carousel" class="carousel-control right" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+  </div>
+</div>

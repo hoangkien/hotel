@@ -4,26 +4,12 @@
       <div class="col-md-12">
 
         <h1 class="site-title">
-          <%= link_to 'HoangKien\'s Site'%>
+          <%= link_to "Ruby On Rails", home_index_path%>
         </h1>
 
         <div class="site-description">
           Responsive design with Boostrap
         </div>
-
-<!--         <ul class="nav nav-tabs">
-          <li class="active"><%= link_to 'Home'%></li>
-          <li><%= link_to 'About us'%></li>
-          <li><%= link_to 'Contact us'%></li>
-        </ul>
-
-        <hr>
-
-        <ul class="nav nav-pills">
-          <li class="active"><%= link_to 'Home'%></li>
-          <li><%= link_to 'About us'%></li>
-          <li><%= link_to 'Contact us'%></li>
-        </ul> -->
 
       </div>
     </div>
@@ -43,7 +29,19 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li class="active"><%= link_to"Home" %></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Ruby</a></li>
+              <li><a href="#">Rails</a></li>
+              <li><a href="#">Jquery</a></li>
+              <li><a href="#">Bootstrap</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">HTML</a></li>
+            </ul>
+          </li>
           <li><%= link_to"About us" %></li>
+          <li><%= link_to"Funny" %></li>
           <li><%= link_to"Contact us" %></li>
         </ul>
       </div>

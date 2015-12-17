@@ -3,7 +3,7 @@
   3.2 content with tabs
   3.3 sidebar navigation
   3.4 about us with custom css styling -->
-  <h2>Sidebar Navigation</h2>
+<!--   <h2>Sidebar Navigation</h2>
   <ul class="nav nav-pills nav-stacked">
     <li class="active"><a href="">Home</a></li>
     <li ><a href="">About us</a></li>
@@ -16,16 +16,69 @@
     <a href="#" class="list-group-item active">About us</a>
     <a href="#" class="list-group-item">Contact us</a>
     <a href="#" class="list-group-item">More</a>
-  </nav>
-
-  <h2>Custom css Styles</h2>
+  </nav> -->
   <div class="widget">
-    <h4>Widget title</h4>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur.</p>
+    <h4 class="search-title">Search news</h4>
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="Text input with multiple buttons">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+      </div>
+    </div>
   </div>
+
+  <br>
+
+  <div class="widget">
+    <h4><i class="fa fa-envelope-o"></i> Follow me</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.</p>
+    <form>
+      <div class="input-group">
+        <input type="text" class="form-control" aria-label="Text input with multiple buttons">
+        <div class="input-group-btn">
+          <button type="button" class="btn btn-default">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <br>
+
+  <div class="widget">
+    <h4><i class="fa fa-comment-o"></i> new comments </h4>
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="media-list">
+        <% 6.times do %>
+          <li class="media">
+            <div class="image-user col-md-2 col-xs-3">
+              <%= image_tag('user.png',width: '100%', class: 'pull-left')%>
+            </div>
+            <div class="media-body">
+              <div class="media-title">
+                <span>Hoang van Kien</span> on <a href="#">Lorem ipsum dolor sit amet</a>
+              </div>
+            </div>
+          </li>
+        <% end -%>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="widget">
+    <h4>Tags</h4>
+    <div class="row">
+      <div class='col-md-12'>
+        <% 20.times do %>
+          <a href=""><i class="fa fa-tags"></i><%= Constant::ConstantHelper::TAG.sample%></a>
+        <% end -%>
+      </div>
+    </div>
+  </div>
+
 
 </aside> <!-- /sidebar-content aside ends here-->

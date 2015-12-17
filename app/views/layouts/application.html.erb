@@ -36,5 +36,23 @@
     4.2 three columns with different panel content
     4.3 coppyright info
   </footer> <!-- /footer ends here-->
+  <div class="col-md-1 col-xs-5 pull-right" id='cd-top'>
+    <%= image_tag('back-to-top.png', width: '100%', class: 'cd-top')%>
+  </div>
+  <script type="text/javascript">
+    $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      console.log(height);
+      if(height  > 750) {
+        $("#cd-top").show(300);
+      } else {
+        $("#cd-top").hide(300);
+      }
+    });
+    $(".cd-top").click(function(){
+      $("html, body").animate({ scrollTop: 0 }, "slow");
+      return false;
+    });
+  </script>
 </body>
 </html>

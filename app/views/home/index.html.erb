@@ -6,10 +6,10 @@
         <%= image_tag('topbanner.jpg', class: 'img-thumbnail img-responsive')%>
       </a>
     </div> <!-- advert div ends here-->
-    <h2>Feature post</h2>
+    <h2 class="cate-title">Feature post</h2>
     <div class="row">
       <% 6.times do %>
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-12">
           <ul class="media-list">
             <li class="media">
               <%= image_tag('feature1.jpg', class: 'pull-left img-thumbnail')%>
@@ -31,11 +31,11 @@
     </div>
 
 
-    <h2> Latest News</h2>
+    <h2 class="cate-title"> Latest News</h2>
 
     <div class="row" id="idlatestNews">
       <% 4.times do %>
-        <div class="col-md-6">
+        <div class="col-md-6 col-xs-12">
           <div class="thumbnail">
 
             <div class="latest-title">
@@ -64,11 +64,11 @@
       <a href="#"> View all latest posts</a>
     </div>
 
-    <h2> Most commented posts</h2>
+    <h2 class="cate-title"> Most commented posts</h2>
 
     <div class="row">
       <% 6.times do %>
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-6">
           <div class="thumbnail">
             <%= image_tag('commented.jpg')%>
             <div class="caption">
@@ -85,24 +85,23 @@
       <a href="#"> View all commented posts</a>
     </div>
 
-    <h2>Single post with media element</h2>
+    <h2 class="cate-title">Single post with media element</h2>
 
-    <div class="media">
-      <div class="pull-left">
-      <%= image_tag("single.jpg")%>
-      </div>
-      <div class="media-body">
+    <div class="row">
+      <div class="col-md-12">
+        <%= image_tag("single.jpg", class: 'pull-left img-thumbnail img-responsive')%>
         <div class="media-heading">
           <h2><a href="#">This is post title here</a></h2>
-        </div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.</p>
-        <div class="post-info">
-          <span class='glyphicon glyphicon-time'></span> November 15
-          <span class='glyphicon glyphicon-user'></span> <a href="#">Hoangkien</a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div class="post-info">
+            <span class='glyphicon glyphicon-time'></span> November 15
+            <span class='glyphicon glyphicon-user'></span> <a href="#">Hoangkien</a>
+          </div>
         </div>
       </div>
     </div>
+    <div class="clearfix"></div>
 <!--     2.1 advertising
     2.2 feature post with small feature images
     2.3 ads

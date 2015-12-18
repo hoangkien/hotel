@@ -23,6 +23,13 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem "twitter-bootstrap-rails"
+gem 'devise',              github: 'plataformatec/devise'
+gem 'responders',          github: 'plataformatec/responders'
+gem 'inherited_resources', github: 'josevalim/inherited_resources'
+gem 'ransack',             github: 'ernie/ransack'
+gem 'activeadmin',         github: 'activeadmin'
+gem 'formtastic',          github: 'justinfrench/formtastic'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

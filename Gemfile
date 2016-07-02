@@ -29,8 +29,7 @@ gem 'inherited_resources', github: 'josevalim/inherited_resources'
 gem 'ransack',             github: 'ernie/ransack'
 gem 'activeadmin',         github: 'activeadmin'
 gem 'formtastic',          github: 'justinfrench/formtastic'
-
-
+gem 'ckeditor',            github: 'galetahub/ckeditor'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

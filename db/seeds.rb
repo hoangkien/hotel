@@ -5,4 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+AdminUser.all.destroy_all
+Category.all.destroy_all
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
+%w(Ruby Rails Jqurey HTML Css Boostrap).each do |cate|
+  Category.create!(name: cate)
+end

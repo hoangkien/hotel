@@ -1,5 +1,9 @@
 class NewsController < InheritedResources::Base
 
+  def show
+    
+  end
+
   private
 
     def new_params
